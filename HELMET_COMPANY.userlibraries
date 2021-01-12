@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<eclipse-userlibraries>
+  <library name="activation">
+    <archive path="D:/IT/LT web/activation.jar" />
+    <archive path="D:/IT/LT web/mail.jar" />
+  </library>
+  <library name="additionnal">
+    <archive path="D:/IT/LT web/additionnal.jar" />
+  </library>
+  <library name="javax.activation-api-1.2.0">
+    <archive path="D:/IT/LT web/javax.activation-api-1.2.0.jar" />
+    <archive path="D:/IT/LT web/jaxb-api-2.3.1.jar" />
+  </library>
+  <library name="javax.servlet-1.4">
+    <archive path="D:/IT/LT web/DoAnCuoiKy_2020/javax.servlet-3.0.jar" />
+  </library>
+  <library name="javax.servlet.jsp.jstl-1.2.1">
+    <archive path="D:/IT/LT web/DoAnCuoiKy_2020/javax.servlet.jsp.jstl-1.2.1.jar" />
+    <archive path="D:/IT/LT web/DoAnCuoiKy_2020/javax.servlet.jsp.jstl-api-1.2.1.jar" />
+    <archive path="D:/IT/LT web/DoAnCuoiKy_2020/sqljdbc4-2.0.jar" />
+  </library>
+  <library name="mail-1.5.0-b01">
+    <archive path="D:/IT/LT web/mail-1.5.0-b01.jar" />
+  </library>
+  <library name="sqljdbc42">
+    <archive path="D:/IT/LT web/DoAnCuoiKy_2020/sqljdbc_6.0/enu/jre8/sqljdbc42.jar" />
+  </library>
+  <library name="bootstrap.bundle">
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap.bundle.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap.bundle.min.js" />
+  </library>
+  <library name="bootstrap.min">
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap.min.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap-select.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap-notify.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/light-bootstrap-dashboard.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/chartist.min.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/jquery.3.2.1.min.js" />
+  </library>
+  <library name="chartist">
+    <archive path="C:/Users/Thang Dao/.IntelliJIdea2019.3/config/javascript/extLibs/http_rawgit.com_gionkunz_chartist-js_master_dist_chartist.css" />
+  </library>
+  <library name="jquery-1.10.2">
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/jquery-1.10.2.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/jquery-ui.custom.min.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/fullcalendar.js" />
+  </library>
+  <library name="jquery.3.2.1.min">
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/jquery.3.2.1.min.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/bootstrap.min.js" />
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assets/js/light-bootstrap-dashboard.js" />
+  </library>
+  <library name="main">
+    <archive path="D:/IT/LT web/HELMET_COMPANY/web/Views/assetLogin/js/main.js" />
+  </library>
+</eclipse-userlibraries>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javax.servlet-1.4"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javax.servlet.jsp.jstl-1.2.1"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/bootstrap.min"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jquery-1.10.2"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/main"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jquery.3.2.1.min"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/sqljdbc42"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/mail-1.5.0-b01"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javax.activation-api-1.2.0"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/additionnal"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/activation"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/chartist"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/bootstrap.bundle"/>
+	<classpathentry kind="output" path="out/production/untitled1"/>
+</classpath>

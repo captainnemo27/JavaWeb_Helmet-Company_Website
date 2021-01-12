@@ -1,0 +1,26 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="untitled1:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/untitled1_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="untitled1" />
+          <element id="library" level="application" name="jquery.3.2.1.min" />
+          <element id="library" level="application" name="main" />
+          <element id="library" level="application" name="jquery-1.10.2" />
+          <element id="library" level="application" name="bootstrap.min" />
+          <element id="library" level="application" name="bootstrap.bundle" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="javax.servlet.jsp.jstl-1.2.1" />
+          <element id="library" level="project" name="sqljdbc42" />
+          <element id="library" level="project" name="mail-1.5.0-b01" />
+          <element id="library" level="project" name="javax.activation-api-1.2.0" />
+          <element id="library" level="project" name="additionnal" />
+          <element id="library" level="project" name="activation" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="untitled1/web/Web" />
+    </root>
+  </artifact>
+</component>

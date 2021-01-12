@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sqljdbc42" type="kotlin.js">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../DoAnCuoiKy_2020/sqljdbc_6.0/enu/jre8/sqljdbc42.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
