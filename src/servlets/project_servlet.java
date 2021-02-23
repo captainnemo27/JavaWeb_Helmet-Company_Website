@@ -91,6 +91,13 @@ public class project_servlet extends HttpServlet {
         request.setAttribute("ProjectList",listProject);
 
         String ItemMenu = "project";
+        if( User.getType().equals("Admin")){
+            ItemMenu = "project";
+        }
+        else if (User.getType().equals("Emp"))
+            ItemMenu = "projectS";
+        else if (User.getType().equals("LeaderTeam"))
+            ItemMenu = "project";
         request.setAttribute("ItemMenu",ItemMenu);
         String Name = "Project";
         request.setAttribute("Name",Name);

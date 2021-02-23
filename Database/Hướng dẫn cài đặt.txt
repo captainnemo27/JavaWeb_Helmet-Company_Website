@@ -1,0 +1,9 @@
+﻿- Restore Database bằng file sql data_HELMET_COMPANY
+- Chạy role_HELMET_COMPANY để tạo một vài login - user cho SQL Server và Database
+
+- Cài đặt INTEL IJ hoặc Esclipe chạy server WEB Tomcat
+- Build project và đăng nhập bằng một trong các tài khoản sau:
+	thangdao - 123
+	AdminUser - 123
+	EmpUser - 123
+	LeaderUser - 123

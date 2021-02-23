@@ -65,7 +65,22 @@ $(document).ready(function(){
             })
 
     });
+    $("#editTeam").click(function () {
+        var teamId = $('#teamIdEdit').val();
+        var teamName=$('#teamNameEdit').val();
+        var teamAddress = $('#teamAddressEdit').val();
+        var teamEmail =$('#teamEmailEdit').val();
+        var teamPhone =$('#teamPhoneEdit').val();
+        var teamIdAdmin =$('#teamIdAdminEdit').val();
 
+        $.ajax({
+            type: "POST",
+            url: "storeEditTeam",
+            data: {teamId:teamId,teamName:teamName,teamIdAdmin:teamIdAdmin,teamPhone:teamPhone,teamEmail:teamEmail,teamAddress:teamAddress}
+        });
+
+
+    });
     $("#addStaff").click(function () {
         var staffName=$('#staffName').val();
         var staffSex = $('#staffSex').val();
@@ -104,6 +119,7 @@ $(document).ready(function(){
             {name:name,content:content,idProject:idProject,idstaff:idstaff,timefrom:timefrom,timeend:timeend})
 
     });
+
     $("#btnCPW").click(function () {
         var userName =$('#userNameCPW').val();
         var oldPassword = $('#oldPassword').val();
@@ -136,6 +152,11 @@ $(document).ready(function(){
     });
     $("#btnToolProject").click(function(){
         $("#divToolProject").slideToggle("slow",function (){
+
+        });
+    });
+    $("#btnToolSalary").click(function(){
+        $("#divToolSalary").slideToggle("slow",function (){
 
         });
     });

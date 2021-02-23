@@ -4,7 +4,7 @@ import utils.UtilsDB;
 
 import java.util.Date;
 
-public class Staff extends UtilsDB {
+public class Staff {
     private int id;
     private String name;
     private Date dateOfBirth;

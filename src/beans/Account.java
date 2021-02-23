@@ -2,7 +2,7 @@ package beans;
 
 import utils.UtilsDB;
 
-public class Account extends UtilsDB {
+public class Account {
     private String userName;
     private String displayName;
     private String passWord;

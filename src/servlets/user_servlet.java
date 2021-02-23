@@ -140,7 +140,7 @@ public class user_servlet extends HttpServlet {
         String idTeamStr = (String) request.getParameter("idTeam");
         String aboutStaff = (String) request.getParameter("aboutStaff");
         String statusStr = (String) request.getParameter("status");
-        if(idStr!=null && name!=null && dateOfBirthStr!=null && address!=null && sex !=null && phone != null && email != null && idTeamStr !=null ){
+        if( name!=null && dateOfBirthStr!=null && address!=null && sex !=null && phone != null && email != null && idTeamStr !=null ){
             System.out.print(dateOfBirthStr);
             System.out.print("\nPost status:");
 
@@ -174,9 +174,10 @@ public class user_servlet extends HttpServlet {
 
 
             Staff st = new Staff(id,name,dateOfBirth,address,sex,phone,email,User.getUserName(),idTeam,aboutStaff,status);
+            System.out.print(st.getUserName()+"44444444444444444444");
             boolean hasError = false;
             String errorString ="";
-            if (name == null /*|| dateOfBirth == null || address ==null || email == null || idTeam == 0 || phone == null*/) {
+            if (st.equals(null)) {
                 hasError = true;
                 errorString = "Required fill full, Name or Dateofbirth or Address or Email or Phone or IdTeam is null!";
 

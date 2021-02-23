@@ -26,7 +26,7 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label>FULLNAME</label>
-                                    <input type="text" name ="name" class="form-control" placeholder="Full name" value="${staff.name}"    title="Fullname is your name, Please not null">
+                                    <input type="text" name ="name" class="form-control" placeholder="Full name" value="${staff.name}"  pattern="[A-Za-z ]{1,32}"   title="Fullname is your name, Please not null">
                                 </div>
                             </div>
                             <div class="col-md-4">

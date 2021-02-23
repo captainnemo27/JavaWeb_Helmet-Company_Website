@@ -4,7 +4,7 @@ import utils.UtilsDB;
 
 import java.sql.Timestamp;
 
-public class Project extends UtilsDB {
+public class Project {
     private int id;
     private String name;
     private String content;

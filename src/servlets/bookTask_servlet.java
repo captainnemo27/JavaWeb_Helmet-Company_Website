@@ -138,7 +138,7 @@ public class bookTask_servlet extends HttpServlet {
             request.setAttribute("ItemMenu",ItemMenu);
             String Name = "Tasks";
             request.setAttribute("Name",Name);
-            response.sendRedirect(request.getContextPath() + "/dashboard_guest");
+            response.sendRedirect(request.getContextPath() + "/tasks");
         }
 
 
@@ -147,7 +147,7 @@ public class bookTask_servlet extends HttpServlet {
         request.setAttribute("ItemMenu",ItemMenu);
         String Name = "Tasks";
         request.setAttribute("Name",Name);
-        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/dashboard_guest");
+        RequestDispatcher dispatcher = this.getServletContext().getRequestDispatcher("/tasks");
         dispatcher.forward(request, response);
 
     }

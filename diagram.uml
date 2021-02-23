@@ -3,62 +3,22 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="0.0" y="795.0">beans.Team</node>
-    <node x="1172.0" y="1243.0">conn.SQLServerConnection</node>
-    <node x="1461.0" y="1243.0">conn.DBConnection</node>
-    <node x="1988.0" y="796.0">beans.Account</node>
-    <node x="773.0" y="1243.0">filter.FilterCookie</node>
-    <node x="1032.0" y="729.0">beans.Task</node>
-    <node x="374.0" y="1243.0">filter.FilterJDBC</node>
-    <node x="0.0" y="1243.0">utils.UtilsMy</node>
-    <node x="311.0" y="806.0">beans.Salary</node>
-    <node x="1467.0" y="663.0">beans.Staff</node>
-    <node x="823.75" y="0.0">utils.UtilsDB</node>
-    <node x="620.0" y="806.0">beans.Project</node>
+    <node x="0.0" y="648.0">beans.Team</node>
+    <node x="1172.0" y="986.0">conn.DBConnection</node>
+    <node x="336.0" y="648.0">beans.Account</node>
+    <node x="999.0" y="0.0">beans.Task</node>
+    <node x="374.0" y="986.0">filter.FilterCookie</node>
+    <node x="773.0" y="986.0">filter.FilterJDBC</node>
+    <node x="0.0" y="986.0">utils.UtilsMy</node>
+    <node x="453.0" y="0.0">beans.Staff</node>
+    <node x="1090.0" y="648.0">beans.Salary</node>
+    <node x="0.0" y="0.0">utils.UtilsDB</node>
+    <node x="653.0" y="648.0">beans.Project</node>
   </nodes>
   <notes />
-  <edges>
-    <edge source="beans.Project" target="utils.UtilsDB">
-      <point x="0.0" y="-124.5" />
-      <point x="816.0" y="643.0" />
-      <point x="993.75" y="643.0" />
-      <point x="-34.0" y="301.5" />
-    </edge>
-    <edge source="beans.Staff" target="utils.UtilsDB">
-      <point x="0.0" y="-267.5" />
-      <point x="1717.5" y="633.0" />
-      <point x="1129.75" y="633.0" />
-      <point x="102.0" y="301.5" />
-    </edge>
-    <edge source="beans.Team" target="utils.UtilsDB">
-      <point x="0.0" y="-135.5" />
-      <point x="145.5" y="623.0" />
-      <point x="857.75" y="623.0" />
-      <point x="-170.0" y="301.5" />
-    </edge>
-    <edge source="beans.Task" target="utils.UtilsDB">
-      <point x="0.0" y="-201.5" />
-      <point x="1239.5" y="643.0" />
-      <point x="1061.75" y="643.0" />
-      <point x="34.0" y="301.5" />
-    </edge>
-    <edge source="beans.Account" target="utils.UtilsDB">
-      <point x="0.0" y="-134.5" />
-      <point x="2124.0" y="623.0" />
-      <point x="1197.75" y="623.0" />
-      <point x="170.0" y="301.5" />
-    </edge>
-    <edge source="beans.Salary" target="utils.UtilsDB">
-      <point x="0.0" y="-124.5" />
-      <point x="455.5" y="633.0" />
-      <point x="925.75" y="633.0" />
-      <point x="-102.0" y="301.5" />
-    </edge>
-  </edges>
-  <settings layout="Hierarchic Group" zoom="0.8" x="1480.4047619047615" y="620.1031746031744" />
-  <SelectedNodes>
-    <node>beans.Task</node>
-  </SelectedNodes>
+  <edges />
+  <settings layout="Orthogonal" zoom="0.7185725871857259" x="707.0" y="596.5" />
+  <SelectedNodes />
   <Categories>
     <Category>Fields</Category>
     <Category>Constructors</Category>
@@ -67,6 +27,6 @@
     <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
-  <VISIBILITY>private</VISIBILITY>
+  <VISIBILITY>public</VISIBILITY>
 </Diagram>
 

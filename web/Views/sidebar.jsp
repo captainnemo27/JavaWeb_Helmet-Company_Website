@@ -33,7 +33,7 @@
                     <p>User Profile</p>
                 </a>
             </li>
-            <li <c:if test="${ItemMenu == 'project'}"> class=" active" </c:if>  >
+            <li <c:if test="${ItemMenu == 'project'|| ItemMenu == 'projectS'}"> class=" active" </c:if>  >
                 <a  href="${pageContext.request.contextPath}/project">
                     <i class="pe-7s-note2"></i>
                     <p>Project List</p>
@@ -51,18 +51,18 @@
                     <p>Tasks</p>
                 </a>
             </li>
-            <li <c:if test="${ItemMenu == 'salary'}">class=" active "</c:if> >
+            <li <c:if test="${ItemMenu == 'salary' || ItemMenu == 'salaryS'}">class=" active "</c:if> >
                 <a href="${pageContext.request.contextPath}/salary">
                     <i class="pe-7s-credit"></i>
                     <p>Salary</p>
                 </a>
             </li>
-            <li  <c:if test="${ItemMenu == 'notifications'}"> class=" active" </c:if>  >
+            <%--<li  <c:if test="${ItemMenu == 'notifications'}"> class=" active" </c:if>  >
                 <a href="${pageContext.request.contextPath}/notifications">
                     <i class="pe-7s-bell"></i>
                     <p>Notifications</p>
                 </a>
-            </li>
+            </li>--%>
         </ul>
     </div>
 

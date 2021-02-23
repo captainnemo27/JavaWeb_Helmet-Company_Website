@@ -384,75 +384,83 @@
 
     </div>
 </div>
-
-<div class="row">
-    <div class="col-md-12">
-        <div class="card">
-            <div class="content table-responsive">
-                <div class="header">
-                    <h4 class="title"><b>Edit Team</b></h4>
-                </div>
-                <div class="content">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Team Name</label>
-                                <input type="text" name ="teamName" id="teamNameEdit" class="form-control" placeholder="Team's name"   title="This is your Team Name, Please not null">
-                            </div>
-                        </div>
-
-
-                        <div class="col-md-4">
-                            <div class="form-group">
-                                <label>Admin Id</label>
-                                <input type="text" name ="Admin Id" id="teamIdAdminEdit"  class="form-control" placeholder="Admin Id"   title="This is the Id of Admin Team, Please not null">
-                            </div>
-                        </div>
+<c:if test="${not empty teamEdit}">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="content table-responsive">
+                    <div class="header">
+                        <h4 class="title"><b>Edit Team</b></h4>
                     </div>
+                    <div class="content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Team Name</label>
+                                    <input type="text" name ="teamName" id="teamNameEdit" class="form-control" placeholder="Team's name" value="${teamEdit.name}"  title="This is your Team Name, Please not null">
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="form-group">
+                                    <label>Team Id</label>
+                                    <input type="text" name ="teamName" id="teamIdEdit" class="form-control" disabled placeholder="Id's name" value="${teamEdit.id}"  title="This is your Team Name, Please not null">
+                                </div>
+                            </div>
 
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="teamAddress">Address </label>
-                                <input type="text" id="teamAddressEdit" name ="" class="form-control" placeholder="Address"  >
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>Admin Id</label>
+                                    <input type="text" name ="Admin Id" id="teamIdAdminEdit"  class="form-control" placeholder="Admin Id" value="${teamEdit.idAdmin}"   title="This is the Id of Admin Team, Please not null">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="teamEmail">Email </label>
-                                <input type="email" id="teamEmailEdit" name ="email" class="form-control" placeholder="Email"  >
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label>Phone number</label>
-                                <input type="tel" name="phone" id="teamPhoneEdit" class="form-control" placeholder="Phone number" >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <p class="text-danger pull-right">${errorStringAddTeam}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <button type="submit" name="submit" id="editTeam" class="btn btn-danger btn-fill pull-right">Update Team</button>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="clearfix"></div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="teamAddress">Address </label>
+                                    <input type="text" id="teamAddressEdit" name ="" class="form-control" placeholder="Address"  value="${teamEdit.address}" >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="teamEmail">Email </label>
+                                    <input type="email" id="teamEmailEdit" name ="email" class="form-control" placeholder="Email"  value="${teamEdit.email}" >
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Phone number</label>
+                                    <input type="tel" name="phone" id="teamPhoneEdit" class="form-control" placeholder="Phone number" value="${teamEdit.phone}">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <p class="text-danger pull-right">${errorStringAddTeam}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <button type="submit" name="submit" id="editTeam" class="btn btn-danger btn-fill pull-right">Update Team</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="clearfix"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+</c:if>
+
 
 <div class="row">
     <div class="col-md-6">
@@ -485,7 +493,7 @@
                                 <td  align="center">
                                     <a href="${pageContext.request.contextPath}/storeStaffOfTeam?id=${Team.id}" class="text-warning"><i class="fa fa-address-book"></i>Staff</a>
                                     <a href="${pageContext.request.contextPath}/storeProjectOfTeam?id=${Team.id}" class="text-warning"><i class="fa fa-address-book"></i> Project</a> |
-                                    <a href="#" class="text-primary" id="btnEditTeam" ><i  class="fa fa-fw fa-edit"></i> Edit</a> |
+                                    <a href="${pageContext.request.contextPath}/storeEditTeam?id=${Team.id}" class="text-primary" id="btnEditTeam" ><i  class="fa fa-fw fa-edit"></i> Edit</a> |
                                     <a href="${pageContext.request.contextPath}/deleteTeam?id=${Team.id}&status=${Team.status}" onClick="return confirm('Are you sure to delete this Team?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
                                 </td>
                             </tr>

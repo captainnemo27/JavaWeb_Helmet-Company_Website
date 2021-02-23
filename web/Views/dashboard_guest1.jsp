@@ -66,15 +66,16 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Dashboard</a>
+                    <a class="navbar-brand" href="dashboard_guest">Dashboard</a>
                 </div>
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-right">
-                        <li>
-                            <a href="${pageContext.request.contextPath}/login">
-                                <p>Log in</p>
-                            </a>
-                        </li>
+                    <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="${pageContext.request.contextPath}/login">
+                            <b>Log in</b>
+                        </a>
+                    </li>
+
                         <li class="separator hidden-lg"></li>
                     </ul>
                 </div>

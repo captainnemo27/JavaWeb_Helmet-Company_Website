@@ -53,12 +53,7 @@ public class storeSalaryList_servlet extends HttpServlet {
         HttpSession session = request.getSession();
         Account User = UtilsMy.getLoginedUser(session);
         request.setAttribute("user",User);
-        /*if (User == null) {
-            // Redirect to login page.
-            response.sendRedirect(request.getContextPath() + "/login");
-            return;
-        }*/
-        // load Team
+
         List<Salary> listSalaryList = null;
         List<Salary> listSalary =null;
         String IdTeamStr = request.getParameter("IdTeamSalary");

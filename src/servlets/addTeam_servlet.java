@@ -99,7 +99,6 @@ public class addTeam_servlet extends HttpServlet {
 
 
         String name = (String) request.getParameter("teamName");
-
         String teamAddress = request.getParameter("teamAddress");
         String teamEmail = request.getParameter("teamEmail");
         String teamPhone = request.getParameter("teamPhone");
@@ -109,7 +108,7 @@ public class addTeam_servlet extends HttpServlet {
 
         int teamIdAdmin = 0;
         int status =1;
-
+        int id=0;
 
         try {
 
@@ -120,7 +119,7 @@ public class addTeam_servlet extends HttpServlet {
         }
 
 
-        Team team = new Team(name, teamAddress,teamPhone,teamEmail,teamIdAdmin);
+        Team team = new Team(id,name, teamAddress,teamPhone,teamEmail,teamIdAdmin);
         boolean hasError = false;
         String errorString ="";
         if (name == null /*|| dateOfBirth == null || address ==null || email == null || idTeam == 0 || phone == null*/) {

@@ -498,6 +498,7 @@ public class UtilsDB {
             String address = rs.getString("Address");
             String phone = rs.getString("Phone") ;
             String email = rs.getString("Email");
+            int idAdmin = rs.getInt("IdAmin");
             String admin = rs.getString("Admin");
 
             team.setId(id);
@@ -505,6 +506,7 @@ public class UtilsDB {
             team.setPhone(phone);
             team.setEmail(email);
             team.setAddress(address);
+            team.setIdAdmin(idAdmin);
             team.setAdmin(admin);
             return team;
         }
@@ -533,6 +535,53 @@ public class UtilsDB {
         String sql ="EXEC SP_DeleteTask ?";
         PreparedStatement pstm = conn.prepareStatement(sql);
         pstm.setInt(1,idTask);
+        pstm.executeUpdate();
+    }
+
+    public static List<Salary> storeMysalary(Connection conn, String userName) throws SQLException{
+        String sql = "EXEC SP_storeMysalary ?";
+        PreparedStatement pstm = conn.prepareStatement(sql);
+        pstm.setString(1,userName);
+        ResultSet rs = pstm.executeQuery();
+        ArrayList<Salary> mysalary = new ArrayList<Salary>();
+        if(rs.next() && rs.getRow()>0){
+            int Month = rs.getInt("Month");
+            int Year = rs.getInt("SYear");
+            String name = rs.getString("Name");
+            float fixSalary = rs.getFloat("FixedSalary");
+            float bonus = rs.getFloat("Bonus");
+            float salary = fixSalary+bonus;
+            String teamName = rs.getString("Team");
+            Salary Salary =new Salary(Month,Year,name,fixSalary,bonus,salary,teamName);
+            mysalary.add(Salary);
+        }
+        return mysalary;
+    }
+
+    public static void checkSalaryMonth(Connection conn, int month, int year) throws SQLException{
+        String sql ="EXEC SP_checkSalaryMonth ?,?";
+        PreparedStatement pstm = conn.prepareStatement(sql);
+        pstm.setInt(1,month);
+        pstm.setInt(2,year);
+        pstm.executeUpdate();
+    }
+
+    public static void storeCheckSalaryYear(Connection conn, int yearI) throws SQLException{
+        String sql ="EXEC SP_checkSalaryYearStaff ?";
+        PreparedStatement pstm = conn.prepareStatement(sql);
+        pstm.setInt(1,yearI);
+        pstm.executeUpdate();
+    }
+
+    public static void storeupdateTeam(Connection conn, Team team) throws SQLException {
+        String sql ="EXEC SP_updateTeam ?,?,?,?,?,?";
+        PreparedStatement pstm = conn.prepareStatement(sql);
+        pstm.setInt(1,team.getId());
+        pstm.setString(2,team.getName());
+        pstm.setString(3,team.getAddress());
+        pstm.setString(4,team.getPhone());
+        pstm.setString(5,team.getEmail());
+        pstm.setInt(6,team.getIdAdmin());
         pstm.executeUpdate();
     }
 }

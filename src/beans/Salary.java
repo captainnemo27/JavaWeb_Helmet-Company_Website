@@ -2,7 +2,7 @@ package beans;
 
 import utils.UtilsDB;
 
-public class Salary extends UtilsDB {
+public class Salary {
     private int month;
     private int year;
     private float fixsalary;

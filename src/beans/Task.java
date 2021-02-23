@@ -1,11 +1,9 @@
 package beans;
 
 
-import utils.UtilsDB;
-
 import java.sql.Timestamp;
 
-public class Task extends UtilsDB {
+public class Task {
     private int id;
     private String name;
     private String content;

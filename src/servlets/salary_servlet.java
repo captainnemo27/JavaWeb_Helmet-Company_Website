@@ -57,7 +57,7 @@ public class salary_servlet extends HttpServlet {
 
         // load DB to Task
         List<Salary> listSalary = null;
-        //List<Team> listTeam = null;
+        List<Salary> mysalary = null;
 
         boolean hasError = false;
         String errorString = null;
@@ -67,7 +67,7 @@ public class salary_servlet extends HttpServlet {
         try {
 
             listSalary = UtilsDB.storeListSalary(conn);
-            //listTeam = UtilsDB.storeInfoListTeam(conn);
+            mysalary = UtilsDB.storeMysalary(conn,User.getUserName());
 
             if (listSalary == null ) {
                 hasError = true;
@@ -96,7 +96,15 @@ public class salary_servlet extends HttpServlet {
 
         request.setAttribute("SalaryList",listSalary);
         String ItemMenu = "salary";
+        if( User.getType().equals("Admin")){
+            ItemMenu = "salary";
+        }
+        else if (User.getType().equals("Emp"))
+            ItemMenu = "salaryS";
+        else if (User.getType().equals("LeaderTeam"))
+            ItemMenu = "salary";
         String Name = "Salary";
+        request.setAttribute("SalaryListS",mysalary);
         request.setAttribute("ItemMenu",ItemMenu);
         request.setAttribute("Name",Name);
 

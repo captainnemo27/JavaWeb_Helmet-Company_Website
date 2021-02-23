@@ -131,9 +131,8 @@ public class changeInforAccount_servlet extends HttpServlet {
 
         mailMessage.setSubject("Helmet TrungLeo's Company");
 
-//        mailMessage.setText("Your account : " +UserName + " Have change password and "+
-//                "\n new password : " + newPassword );
-        String emailBody = "<h2 style='color: blue'>Your account : </h2> "+UserName+"<p style='color: red'>Have change password and new password :<p> "+newPassword+"  \n" +
+
+        String emailBody =
                 "<!DOCTYPE html>\n" +
                 "<html lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:o=\"urn:schemas-microsoft-com:office:office\">\n" +
                 "<head>\n" +

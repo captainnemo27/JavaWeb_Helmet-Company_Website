@@ -27,12 +27,7 @@ var navbar_initialized = false;
 $(document).ready(function(){
 
 
-    $('#checkTask1').change(function() {
-        if(this.checked) {
-            alert("Bạn vừa thích freetuts.net");
-        }
 
-    });
     $("#checkTask").click(function () {
         var idTask =$('#idTask').val();
         if (this.checked === true){
@@ -62,14 +57,7 @@ $(document).ready(function(){
                 teamPhone:teamPhone,
                 teamIdAdmin:teamIdAdmin
             });
-        $.notify({
-            icon: 'pe-7s-gift',
-            message: "Welcome to <b>Light Bootstrap Dashboard</b> - a beautiful freebie for every web developer."
 
-        },{
-            type: 'info',
-            timer: 4000
-        });
     });
 
     $("#addStaff").click(function () {
@@ -153,6 +141,11 @@ $(document).ready(function(){
 
     $("#btnToolProject").click(function(){
         $("#divToolProject").slideToggle("slow",function (){
+
+        });
+    });
+    $("#btnToolSalary").click(function(){
+        $("#divToolSalary").slideToggle("slow",function (){
 
         });
     });

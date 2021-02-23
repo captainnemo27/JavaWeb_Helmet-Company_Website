@@ -142,7 +142,7 @@
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group">
-                                                        <label >ID Staff </label>
+                                                        <label >ID Team </label>
                                                         <input type="text" name="teamId1" id="teamId1" class="form-control" placeholder="Id Team" value="">
                                                     </div>
                                                 </div>
@@ -153,7 +153,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <p class="text-danger pull-right">${errorString}</p>
+                                                <p class="text-danger pull-right">Error to save your Project !!!</p>
                                             </div>
                                         </div>
                                     </div>
@@ -200,7 +200,7 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
-                                                <p class="text-danger pull-right">${errorString}</p>
+                                                <p class="text-danger pull-right"></p>
                                             </div>
                                         </div>
                                     </div>
@@ -266,7 +266,7 @@
                                 <th>${Project.idTeam}</th>
                                 <td align="left">
                                     <a href="${pageContext.request.contextPath}/editProject?id=${Project.id}" class=" text-primary td-actions"><i class="fa fa-fw fa-edit"></i> Edit</a> |
-                                    <a href="${pageContext.request.contextPath}/deleteProject?id=${Project.id}" class="td-actions" onClick="return confirm('Are you sure to delete this Team?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
+                                    <a href="${pageContext.request.contextPath}/deleteProject?id=${Project.id}" class="td-actions" onClick="return confirm('Are you sure to delete this Project?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>

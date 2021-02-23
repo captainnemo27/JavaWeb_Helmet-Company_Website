@@ -1,8 +1,6 @@
 package beans;
 
-import utils.UtilsDB;
-
-public class Team extends UtilsDB {
+public class Team {
     private int id;
     private  String name;
     private String address;
@@ -25,8 +23,8 @@ public class Team extends UtilsDB {
 
     }
 
-    public Team(String name,  String teamAddress, String teamPhone, String teamEmail, int teamIdAdmin) {
-
+    public Team(int id,String name,  String teamAddress, String teamPhone, String teamEmail, int teamIdAdmin) {
+        this.id = id;
         this.name = name;
         this.idAdmin = teamIdAdmin;
         this.email = teamEmail;

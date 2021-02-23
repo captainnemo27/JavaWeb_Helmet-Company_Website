@@ -329,7 +329,7 @@
                                 <td>${Task.timeEnd}</td>
                                 <td align="center">
                                     <a <%--href="${pageContext.request.contextPath}/editProject?id=${Project.id}"--%> class="text-primary"><i  class="fa fa-fw fa-edit"></i> Edit</a> |
-                                    <a href="${pageContext.request.contextPath}/deleteTask?id=${Task.id}" onClick="return confirm('Are you sure to delete this Team?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
+                                    <a href="${pageContext.request.contextPath}/deleteTask?id=${Task.id}" onClick="return confirm('Are you sure to delete this Task?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
                                 </td>
                             </tr>
                         </c:forEach>
@@ -381,7 +381,7 @@
                             <td>${Task.timeEnd}</td>
                             <td align="center">
                                 <a href="${pageContext.request.contextPath}/editTask" class="text-primary"><i  class="fa fa-fw fa-edit"></i> Edit</a> |
-                                <a href="${pageContext.request.contextPath}/deleteTask?id=${Task.id}" onClick="return confirm('Are you sure to delete this Team?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
+                                <a href="${pageContext.request.contextPath}/deleteTask?id=${Task.id}" onClick="return confirm('Are you sure to delete this Task?');"><i class="fa fa-fw fa-trash"></i> Delete</a>
                             </td>
                         </tr>
                     </c:forEach>
