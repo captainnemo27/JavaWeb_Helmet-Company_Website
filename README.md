@@ -10,5 +10,13 @@ department , turnover.
 - Experience: 
 Java Servlet, API , SQL Server, Java Script,…
 ## Install
+- install IntelIJ Utltimate or Community.
+- Install SQL server and install Database by the file bak
+- Install Java 1.8.
+- Build File in IntelIJ to test Server web
 ## Bulid 
-## goodluck
+- Open IntelIJ to build Web.
+- Get connection to Database by SQL server use java JDBC
+- test connection and run server web in IntelIJ
+- See your website
+## Goodluck !!!
